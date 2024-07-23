@@ -19,6 +19,7 @@ header {
     color: #fafaf9;
 }
 
+
 .header-container {
     background-color: #ea580c;
     display: flex;
@@ -27,8 +28,12 @@ header {
     padding: 1rem 4rem;
 }
 
+.logoimg{
+  height: 5rem;
+}
+
 .logo {
-    background-color: #403d39;
+    background-color: #ea580c;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -78,9 +83,25 @@ nav {
 }
 
 .home-page-heading {
-    background-color: black;
+    background: url(./img/hogwards\ castle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     padding: 2rem 4rem;
+    text-align: center;
+    padding: 2rem;
+    height: 85vh;
+    background-position-y: -2rem;
+}
+
+.home-page-heading-child{
+  background: rgba(10, 9, 9, 0.7);
+  padding: 9rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .inner-cont-container {
@@ -91,10 +112,16 @@ nav {
     flex-wrap: wrap;
 }
 
+.intro {
+  font-family: 'Parseltongue', cursive; 
+  font-weight: bold;
+  text-align: center;
+}
+
 .content-box {
     border: 1px solid white;
     padding: 2rem 4rem;
-    flex: 1 1 45%; /* Adjust this value to change the flex behavior */
+    flex: 1 1 45%; 
 }
 
 @media (max-width: 425px) {
@@ -162,9 +189,7 @@ nav {
   .footer-menu {
     list-style: none;
     margin: 10px;
-     /* Flex-grow, flex-shrink, flex-basis */
     width: 30%;
-    /* margin-left: 2rem; */
     border: 1px solid white;
   }
   
@@ -196,7 +221,6 @@ nav {
     .footer-container {
         display: flex;
         
-      /* flex-direction: column; */
       align-items: center;
     }
   
@@ -206,4 +230,72 @@ nav {
       border: 1px solid white;
     }
   }
+
+  .slider-container {
+    overflow: hidden;
+    width: 100vw;
+    height: 35vh;
+    max-width: 800px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
   
+  .slider {
+    display: flex;
+    width: calc(100% * 7);
+    animation: slide 21s linear infinite;
+  }
+  
+  .slider img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-calc(100% / 7));
+    }
+  }
+
+  /* Ensure the parent container has a defined height */
+  .content-img-1 {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Set the height you want */
+    overflow: hidden;
+  }
+  
+  .content-img-1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .content-heading-1 {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside the container */
+  }
+
+  .content-img-2{
+    background: url(./img/harry-potter-characters.jpeg);
+    background-size: cover;
+    height: 25rem;
+  }
+
+  .card-heading{
+    color: white;
+    text-align: center;
+    padding: 5rem 10rem;
+  }
+
+  .black {
+    color: #0c0a09;
+  }
