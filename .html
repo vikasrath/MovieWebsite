@@ -1,73 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harry Potter: The Magical Journey</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Harry Potter Fan Page</title>
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: 'Parseltongue', Arial, sans-serif; /* Using the Parseltongue font */
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header, footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            font-size: 2.5em;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .content .text {
+            width: 48%;
+        }
+        .content .video {
+            width: 48%;
+        }
+        .content video {
+            width: 100%;
+        }
+        .table-section, .form-section {
+            padding: 20px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+        .form-section label {
+            margin-top: 10px;
+        }
+        .form-section input, .form-section select, .form-section textarea, .form-section button {
+            margin-top: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#characters">Characters</a></li>
-        <li><a href="#movies">Movies</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <main>
+
+    <!-- Header and Navigation (shared with home page) -->
+    <header>
+        <h1>Harry Potter Fan Page</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
     <section class="hero">
-      <img src="./img/hogwards castle.png" alt="Hogwarts Castle">
+        <img src="./img/hero-img.webp" alt="Hero Image">
+        <h1>About Us</h1>
     </section>
-    
-    <section class="intro">
-      <h2>Welcome to the Magical World of Harry Potter</h2>
-      <p>Join us as we explore the enchanting world of Harry Potter, where magic, adventure, and friendship await at every turn. Discover the secrets of Hogwarts, the characters who make this journey unforgettable, and the movies that brought J.K. Rowling's beloved books to life.</p>
+
+    <!-- Text and Video Section -->
+    <section class="content">
+        <div class="text">
+            <h2>Welcome to the Harry Potter Fan Page</h2>
+            <p>Welcome to our magical Harry Potter fan page, where we celebrate the enchanting world created by J.K. Rowling. Whether you are a Gryffindor, Slytherin, Ravenclaw, or Hufflepuff, you will find something to ignite your passion for the Wizarding World.</p>
+            <p>Explore our content, participate in discussions, and share your love for all things Harry Potter!</p>
+        </div>
+        <div class="video">
+            <video controls poster="path/to/your/poster.jpg">
+                <source src="path/to/your/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
-    
-    <section class="features">
-      <article>
-        <h3>About Harry Potter</h3>
-        <p>Harry Potter is a series of seven fantasy novels written by British author J.K. Rowling. The series chronicles the adventures of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, all of whom are students at Hogwarts School of Witchcraft and Wizardry.</p>
-        <img src="./img/about-harry-potter.avif" alt="About Harry Potter">
-      </article>
-      <article>
-        <h3>Main Characters</h3>
-        <p>Meet the main characters of the Harry Potter series: Harry Potter, Hermione Granger, Ron Weasley, and many more. Each character brings their own unique story and personality to the magical world.</p>
-        <img src="./img/harry-potter-characters.jpeg" alt="Harry Potter Characters">
-      </article>
+
+    <!-- Table Section -->
+    <section class="table-section">
+        <h2>Interesting Facts and Statistics</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Fact</th>
+                    <th>Detail</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Number of Books</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Number of Movies</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Hogwarts Houses</td>
+                    <td>Gryffindor, Slytherin, Ravenclaw, Hufflepuff</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+        <p>Discover more by exploring our content and engaging with fellow fans.</p>
     </section>
-    
-    <section class="cta">
-      <h3>Explore the Movies</h3>
-      <p>Dive into the magical world of the Harry Potter movies. Experience the magic, the excitement, and the adventure as you journey through each of the eight films. From "The Philosopher's Stone" to "The Deathly Hallows," every movie is a spellbinding experience.</p>
-      <img src="./img/harry-potter-movies.webp" alt="Harry Potter Movies">
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <h2>Join Our Community</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="house">Which house do you belong to?</label>
+            <select id="house" name="house">
+                <optgroup label="Hogwarts Houses">
+                    <option value="gryffindor">Gryffindor</option>
+                    <option value="slytherin">Slytherin</option>
+                    <option value="ravenclaw">Ravenclaw</option>
+                    <option value="hufflepuff">Hufflepuff</option>
+                </optgroup>
+            </select>
+
+            <label for="message">Why do you love Harry Potter?</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+
+            <label>Favorite Book:</label>
+            <label><input type="checkbox" name="favorite_book" value="philosophers_stone"> Philosopher's Stone</label>
+            <label><input type="checkbox" name="favorite_book" value="chamber_of_secrets"> Chamber of Secrets</label>
+            <label><input type="checkbox" name="favorite_book" value="prisoner_of_azkaban"> Prisoner of Azkaban</label>
+
+            <label>Favorite Character:</label>
+            <label><input type="radio" name="favorite_character" value="harry"> Harry Potter</label>
+            <label><input type="radio" name="favorite_character" value="hermione"> Hermione Granger</label>
+
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
     </section>
-    
-    <section class="more-info">
-      <article>
-        <h4>Philosopher's Stone</h4>
-        <p>The journey begins with Harry discovering his magical heritage and attending Hogwarts for the first time. An adventure that starts with a letter and changes his life forever.</p>
-        <img src="./img/philosper stone.htm" alt="Philosopher's Stone">
-      </article>
-      <article>
-        <h4>Chamber of Secrets</h4>
-        <p>In his second year at Hogwarts, Harry uncovers a dark secret about the school's past and faces new challenges and dangers lurking within the Chamber of Secrets.</p>
-        <img src="./img/chamber of secrets.jpg" alt="Chamber of Secrets">
-      </article>
-      <article>
-        <h4>Prisoner of Azkaban</h4>
-        <p>Harry's third year introduces him to the mysterious Sirius Black, an escaped prisoner believed to be a danger to Harry. As secrets unravel, Harry learns more about his past and the true nature of his enemies.</p>
-        <img src="./img/prisioners of azkaban.jpg" alt="Prisoner of Azkaban">
-      </article>
-    </section>
-  </main>
-  
-  <footer>
-    <p>&copy; 2024 Harry Potter Fan Page. All rights reserved.</p>
-  </footer>
+
+    <!-- Footer (shared with home page) -->
+    <footer>
+        <p>&copy; 2024 Harry Potter Fan Page. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
