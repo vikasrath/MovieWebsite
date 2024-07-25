@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inner Page</title>
+    <title>about</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body  class="body">
+<body  class="body relative">
 
     <!-- header section.............. -->
     <header>
@@ -20,11 +20,23 @@
         </div>
         <nav>
           <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="inner.html">About</a></li>
             <li><a href="#characters">Characters</a></li>
-            <li><a href="#movies">Movies</a></li>
+            <li class="movies"><a href="#movies">Movies</a></li>
           </ul>
+          <div class="movie-links">
+            <h3 class="movie-heading">Harry Potter Movies</h3>
+            <div class="links-container">
+              <p><a href="https://www.imdb.com/title/tt0241527/" target="_blank">Harry Potter and the Philosopher's Stone</a></p>
+              <p><a href="https://www.imdb.com/title/tt0295297/" target="_blank">Harry Potter and the Chamber of Secrets</a></p>
+              <p><a href="https://www.imdb.com/title/tt0304141/" target="_blank">Harry Potter and the Prisoner of Azkaban</a></p>
+              <p><a href="https://www.imdb.com/title/tt0330373/" target="_blank">Harry Potter and the Goblet of Fire</a></p>
+              <p><a href="https://www.imdb.com/title/tt0373889/" target="_blank">Harry Potter and the Order of the Phoenix</a></p>
+              <p><a href="https://www.imdb.com/title/tt0417741/" target="_blank">Harry Potter and the Half-Blood Prince</a></p>
+              <p><a href="https://www.imdb.com/title/tt0926084/" target="_blank">Harry Potter and the Deathly Hallows – Part 1</a></p>
+            </div>
+         </div>
         </nav>
       </header>
 
@@ -39,18 +51,18 @@
         <!-- Text and Video Section -->
         <div class="text-video">
             <div class="text">
-              <h2 class="display-5">Welcome to the Harry Potter Fan Page</h2>
+              <h2 class="display-5">Welcome to the Harry Potter <span class="">Fan Page</span></h2>
               <br>
               <p>Welcome to our magical Harry Potter fan page, where we celebrate the enchanting world created by J.K. Rowling. Whether you are a Gryffindor, Slytherin, Ravenclaw, or Hufflepuff, you will find something to ignite your passion for the Wizarding World.</p>
               <br>
               <p>Explore our content, participate in discussions, and share your love for all things Harry Potter!</p>
             </div>
             <div class="video">
-                <video controls poster="path_to_poster_image.jpg">
-                    <source src="" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+              <iframe width="80%" height="315" src="https://www.youtube.com/embed/fFGS4zZWGoA" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              </iframe>
             </div>
+            
         </div>
 
         <!-- Table Section -->
@@ -79,12 +91,14 @@
                   <!-- Add more rows as needed -->
               </tbody>
           </table>
+          <br>
+
           <p>Discover more by exploring our content and engaging with fellow fans.</p>
         </div>
 
         <!-- Form Section -->
         <div class="form-section">
-          <h2>Join Our Community</h2>
+          <h2 class="orenge-color bold">Join Our Community</h2>
           <form>
               <label for="name">Name:</label>
               <input type="text" id="name" name="name">
@@ -105,12 +119,12 @@
               <label for="message">Why do you love Harry Potter?</label>
               <textarea id="message" name="message" rows="4"></textarea>
   
-              <label>Favorite Book:</label>
+              <label><h3>Favorite Book:</h3></label>
               <label><input type="checkbox" name="favorite_book" value="philosophers_stone"> Philosopher's Stone</label>
               <label><input type="checkbox" name="favorite_book" value="chamber_of_secrets"> Chamber of Secrets</label>
               <label><input type="checkbox" name="favorite_book" value="prisoner_of_azkaban"> Prisoner of Azkaban</label>
   
-              <label>Favorite Character:</label>
+              <label><h3>Favorite Character:</h3></label>
               <label><input type="radio" name="favorite_character" value="harry"> Harry Potter</label>
               <label><input type="radio" name="favorite_character" value="hermione"> Hermione Granger</label>
   
@@ -126,8 +140,8 @@
           <div class="footer-menu center">
             <ul>
               <li><img src="./img/logo.png" alt="logo" class="logoimg2"></li>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="inner.html">About</a></li>
             </ul>
           </div>
           <div class="footer-menu">
@@ -151,6 +165,6 @@
         </div>
         <div class="copy-write">@copyWrite || vikas Rathore ~ Devansh Jindal</div>
       </footer>
-
+<script src="js.js"></script>
 </body>
 </html>

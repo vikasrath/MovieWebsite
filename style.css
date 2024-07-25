@@ -91,6 +91,8 @@ nav {
   font-size: 1.5rem;
 }
 
+
+
 .home-page-heading {
   background: url(./img/hogwards\ castle.png);
   background-repeat: no-repeat;
@@ -111,6 +113,8 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+
 
 .inner-cont-container {
   margin-top: 2rem;
@@ -281,6 +285,28 @@ nav {
 }
 
 @media (max-width: 425px) {
+
+  .home-page-heading{
+   
+    padding: 2rem 4rem;
+    text-align: center;
+    height: 60vh;
+   
+  }
+  
+  .home-page-heading-child  {
+   
+    padding: 2rem; 
+    
+    
+  }
+  .home-page-heading-child h2 {
+   
+   font-size: medium;
+    
+    
+  }
+
   .inner-box-content{
     /* background-color: #0c0a09; */
     padding: 0px;
@@ -602,4 +628,37 @@ nav {
   background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   font-size: 2.5em;
+}
+.bold{
+  font-weight: 600;
+}
+
+.relative{
+  position: relative;
+}
+.movie-links{
+ 
+  
+  display: none;
+  position: absolute;
+  padding: 2rem;
+  top: 11rem ;
+  right: 0%;
+  z-index: 10;
+ min-height: 300px;
+ width: 30%;
+  background-color: white;
+  color: #007BFF;
+
+}
+.movie-links a{
+  padding: 1rem;
+}
+.movie-links.visible {
+  display: block;
+}
+.movie-heading{
+  padding-left: 7px;
+  color: #173B45;
+  font-weight: 600;
 }
