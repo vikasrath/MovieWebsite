@@ -1,100 +1,108 @@
 /* styles.css */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.orenge-color{
+  color: #ea580c;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0c0a09;
+  font-family: Arial, sans-serif;
+  background-color: #0c0a09;
 }
-.main{
-    background-color: black;
+
+.main {
+  background-color: black;
 }
 
 header {
-    background-color: #0c0a09;
-    color: #fafaf9;
+  background-color: #0c0a09;
+  color: #fafaf9;
 }
-
 
 .header-container {
-    background-color: #ea580c;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
+  background-color: #ea580c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem 4rem; */
+  
+  flex-wrap: wrap;
 }
 
-.logoimg{
+.logoimg {
   height: 5rem;
+  padding-left: 4rem;
 }
 
 .logo {
-    background-color: #ea580c;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
+  background-color: #ea580c;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
 .title {
-    font-weight: bold;
-    color: #fafaf9;
-    text-align: center;
-    flex-grow: 1;
+  font-weight: bold;
+  color: #fafaf9;
+  text-align: center;
+  flex-grow: 1;
 }
 
 nav {
-    background-color: #0c0a09;
-    border: 1px solid rgba(245, 222, 179, 0.527);
+  background-color: #0c0a09;
+  border: 1px solid rgba(245, 222, 179, 0.527);
+  width: 100%;
+  /* margin-top: 1rem; */
+  padding-top: 1rem;
 }
 
 .nav-links {
-    display: flex;
-    justify-content: space-around;
-    padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
 }
 
 .nav-links li {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: #fafaf9;
-    padding: 1rem 2rem;
-    transition: background-color 0.3s ease;
+  text-decoration: none;
+  color: #fafaf9;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease;
 }
 
 .nav-links a:hover {
-    border-radius: 10px;
-    background-color: #ea580c;
-    color: white;
+  border-radius: 10px;
+  background-color: #ea580c;
+  color: white;
 }
 
 .hero-image {
-    background-color: #252422;
-    padding: 5rem;
-    text-align: center;
-    color: #fafaf9;
-    font-size: 1.5rem;
+  background-color: #252422;
+  padding: 5rem;
+  text-align: center;
+  color: #fafaf9;
+  font-size: 1.5rem;
 }
 
 .home-page-heading {
-    background: url(./img/hogwards\ castle.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    padding: 2rem 4rem;
-    text-align: center;
-    padding: 2rem;
-    height: 85vh;
-    background-position-y: -2rem;
+  background: url(./img/hogwards\ castle.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 2rem 4rem;
+  text-align: center;
+  height: 60vh;
+  background-position-y: -2rem;
 }
 
-.home-page-heading-child{
+.home-page-heading-child {
   background: rgba(10, 9, 9, 0.7);
   padding: 9rem;
   height: 100%;
@@ -105,197 +113,315 @@ nav {
 }
 
 .inner-cont-container {
-    margin-top: 2rem;
-    background-color: #ea580c;
-    display: flex;
-    color: white;
-    flex-wrap: wrap;
+  margin-top: 2rem;
+  /* background-color: #ea580c; */
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  /* padding: 2rem; */
+
 }
+/* .inner-box-content{ */
+  /* background-color: #0c0a09; */
+  /* padding: 2.1rem; */
+  /* border: 1px solid white; */
+/* } */
 
 .intro {
-  font-family: 'Parseltongue', cursive; 
+  font-family: 'Parseltongue', cursive;
   font-weight: bold;
   text-align: center;
 }
 
 .content-box {
-    border: 1px solid white;
-    padding: 2rem 4rem;
-    flex: 1 1 45%; 
+  border: 1px solid white;
+  border-left: none;
+  border-right: none;
+  padding: 2rem 4rem;
+  flex: 1 1 45%;
 }
 
-@media (max-width: 425px) {
-    .header-container {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-    }
-
-    
-
-    .nav-links a {
-        padding: 1rem;
-    }
-
-    .inner-cont-container {
-        flex-direction: column;
-    }
-
-    .content-box {
-        padding: 2rem;
-        flex: 1 1 100%;
-    }
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  height: 35vh;
+  max-width: 800px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin: 0 auto; /* Center the slider */
 }
-.card-heading{
-    
-    color: white;
-    padding: 2rem 4rem;
-    text-align: center;
-}
-.card-cont{
-    display: flex;
-    padding: 0px 1rem;
-   
-    justify-content: space-around;
-}
-.card{
-    width: 30%;
-}
-@media (max-width: 425px) {
-    .card-cont{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .card{
-        margin-top: 2rem;
-        width: 100%;
-    }
-}
-.footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .footer-container {
-    background-color: #ea580c;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .footer-menu {
-    list-style: none;
-    margin: 10px;
-    width: 30%;
-    border: 1px solid white;
-  }
-  
-  .footer-menu h4 {
-    margin-bottom: 10px;
-  }
-  
-  .footer-menu ul {
-    padding: 0;
-  }
-  
-  .footer-menu li {
-    list-style: none;
-    margin-bottom: 8px;
-  }
-  
-  .footer-menu a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-menu a:hover {
-    color: #ea580c;
-  }
-  
-  /* Media Queries for smaller screens */
-  @media (max-width: 425px) {
-    .footer-container {
-        display: flex;
-        
-      align-items: center;
-    }
-  
-    .footer-menu {
-      text-align: center;
-      width: 40%;
-      border: 1px solid white;
-    }
-  }
 
-  .slider-container {
-    overflow: hidden;
-    width: 100vw;
-    height: 35vh;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .slider {
-    display: flex;
-    width: calc(100% * 7);
-    animation: slide 21s linear infinite;
-  }
-  
-  .slider img {
-    width: 100%;
-    flex-shrink: 0;
-  }
-  
-  @keyframes slide {
-    0% {
+.slider {
+  display: flex;
+  width: calc(100% * 7);
+  animation: slide 21s linear infinite;
+}
+
+.slider img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+@keyframes slide {
+  0% {
       transform: translateX(0);
-    }
-    100% {
+  }
+  100% {
       transform: translateX(-calc(100% / 7));
-    }
   }
+}
 
-  /* Ensure the parent container has a defined height */
-  .content-img-1 {
-    position: relative;
-    width: 100%;
-    height: 400px; /* Set the height you want */
-    overflow: hidden;
-  }
+/* Ensure the parent container has a defined height */
+.content-img-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  width: 100%;
+  height: 400px; /* Set the height you want */
+  overflow: hidden;
+}
+
+.content-img-1 iframe {
+ 
+  width: 90%;
+  height: 90%;
   
+}
+
+.content-heading-1 {
+  display: flex;
+  flex-direction: column; /* Align children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text inside the container */
+}
+
+/* .content-img-2 {
+  background: url(./img/harry-potter-characters.jpeg);
+  background-size: cover;
+  height: 25rem;
+} */
+ 
+.content-img-2 {
+  background: url(./img/harry-potter-characters.jpeg) no-repeat center center;
+  background-size: cover;
+  height: 20rem; /* Adjust height as needed */
+  width: 20rem;  
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  position: relative;
+
+}
+
+
+
+.card-heading {
+  color: white;
+  text-align: center;
+  padding: 5rem 10rem;
+}
+
+.card-cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 1rem;
+}
+
+.card {
+  width: 30%;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+ 
+  padding-top: 20px;
+  
+}
+
+.footer-container {
+  /* background-color: #ea580c; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-menu {
+  list-style: none;
+  margin: 10px;
+  width: 30%;
+  /* border: 1px solid white; */
+  
+}
+
+.footer-menu h4 {
+  margin-bottom: 10px;
+}
+
+.footer-menu ul {
+  padding: 0;
+}
+
+.footer-menu li {
+  list-style: none;
+  margin-bottom: 8px;
+  margin-top: 1rem;
+}
+
+.footer-menu a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-menu a:hover {
+  color: #ea580c;
+}
+
+@media (max-width: 425px) {
+  .inner-box-content{
+    /* background-color: #0c0a09; */
+    padding: 0px;
+    /* border: 1px solid white; */
+  }
   .content-img-1 iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
+ 
     width: 100%;
     height: 100%;
+    
   }
-
-  .content-heading-1 {
-    display: flex;
-    flex-direction: column; /* Align children vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text inside the container */
+  .home-page-heading {
+    
+    height: 30vh;
+   
   }
-
-  .content-img-2{
+  
+  .content-img-2 {
     background: url(./img/harry-potter-characters.jpeg);
     background-size: cover;
-    height: 25rem;
+    height: 15rem;
+    /* box-shadow: 5px 5px 10px white; */
+  }
+  .header-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
   }
 
-  .card-heading{
+  
+
+  .inner-cont-container {
+      flex-direction: column;
+  }
+
+  .content-box {
+      padding: 2rem;
+      flex: 1 1 100%;
+  }
+
+  .card {
+      width: 100%;
+  }
+
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-menu {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header-container {
+      flex-direction: column;
+      text-align: center;
+      padding: 1rem;
+  }
+
+ 
+
+  .nav-links a {
+      padding: 1rem;
+  }
+
+  .inner-cont-container {
+      flex-direction: column;
+  }
+
+  .content-box {
+      padding: 2rem;
+      min-height: 300px;
+      flex: 1 1 100%;
+  }
+
+  .card-heading {
+      padding: 2rem;
+  }
+
+  .card-cont {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .card {
+      width: 100%;
+      margin-top: 2rem;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-menu {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+}
+
+.border-none{
+  border: none;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .logoimg2{
+    height: 5rem;
+  }
+
+  .mycolor{
+    color: #FFB200;
+  }
+  .copy-write{
+    margin-top: 2rem;
+    padding: 1rem;
+    
+    background-color: #ea580c;
     color: white;
     text-align: center;
-    padding: 5rem 10rem;
   }
 
-  .black {
-    color: #0c0a09;
+  .card-body {
+    color: #fafaf9;
+    background-color: #173B45;
+  }
+  .white-color{
+    color: #F8EDED;
+  }
+  .bg-orenge{
+    background-color: #f00707;
+    color: wheat;
+  }
+  .bg-orenge:hover{
+    background-color: #b62020;
   }
