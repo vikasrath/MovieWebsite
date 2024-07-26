@@ -102,7 +102,7 @@ nav {
 
 
 .home-page-heading {
-  background: url(./image/hogwards\ castle.png);
+  background: url(../image/hogwards\ castle.png);
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -216,7 +216,7 @@ nav {
 } */
  
 .content-img-2 {
-  background: url(./image/harry-potter-characters.jpeg) no-repeat center center;
+  background: url(../image/harry-potter-characters.jpeg) no-repeat center center;
   background-size: cover;
   height: 20rem; /* Adjust height as needed */
   width: 20rem;  
