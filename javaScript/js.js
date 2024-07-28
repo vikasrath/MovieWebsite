@@ -36,3 +36,39 @@ movieslink.addEventListener("mouseleave", () => {
 moviesdropdown.addEventListener("mouseleave", () => {
   moviesdropdown.classList.remove("visible");
 });
+
+
+function smoothScrollWithOffset(targetId) {
+  const targetElement = document.getElementById(targetId);
+  if (targetElement) {
+    const offset = 110; // Adjust the offset for fixed header height
+    window.scrollTo({
+      top: targetElement.offsetTop - offset,
+      behavior: 'smooth'
+    });
+  } else {
+    console.error(`Element with ID ${targetId} not found.`);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const href = this.getAttribute('href');
+      const url = new URL(href, document.baseURI);
+      const targetId = url.hash.substring(1);
+
+      if (url.pathname === window.location.pathname && targetId) {
+        e.preventDefault();
+        smoothScrollWithOffset(targetId);
+      }
+    });
+  });
+});
+
+window.addEventListener('load', function() {
+  if (window.location.hash) {
+    const targetId = window.location.hash.substring(1);
+    smoothScrollWithOffset(targetId);
+  }
+});
