@@ -1,18 +1,38 @@
-const movielink = document.querySelector(".movies");
-const dropdown = document.querySelector(".movie-links");
+const aboutlink = document.querySelector(".about");
+const aboutdropdown = document.querySelector(".about-links");
 
-movielink.addEventListener("mouseenter", () => {
-  dropdown.classList.add("visible");
+aboutlink.addEventListener("mouseenter", () => {
+  aboutdropdown.classList.add("visible");
 });
 
-movielink.addEventListener("mouseleave", () => {
+aboutlink.addEventListener("mouseleave", () => {
   setTimeout(() => {
-    if (!dropdown.matches(":hover")) {
-      dropdown.classList.remove("visible");
+    if (!aboutdropdown.matches(":hover")) {
+      aboutdropdown.classList.remove("visible");
     }
   }, 200);
 });
 
-dropdown.addEventListener("mouseleave", () => {
-  dropdown.classList.remove("visible");
+aboutdropdown.addEventListener("mouseleave", () => {
+  aboutdropdown.classList.remove("visible");
+});
+
+
+const movieslink = document.querySelector(".movies");
+const moviesdropdown = document.querySelector(".movies-links");
+
+movieslink.addEventListener("mouseenter", () => {
+  moviesdropdown.classList.add("visible");
+});
+
+movieslink.addEventListener("mouseleave", () => {
+  setTimeout(() => {
+    if (!moviesdropdown.matches(":hover")) {
+      moviesdropdown.classList.remove("visible");
+    }
+  }, 200);
+});
+
+moviesdropdown.addEventListener("mouseleave", () => {
+  moviesdropdown.classList.remove("visible");
 });

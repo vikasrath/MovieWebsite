@@ -646,24 +646,36 @@ nav {
 .relative{
   position: relative;
 }
-.movie-links{
- 
-  
+.about-links{
   display: none;
   position: absolute;
-  padding: 2rem;
-  top: 11rem ;
-  right: 0%;
+  padding: 1rem;
+  top: 10rem ;
+  right: 1.5%;
   z-index: 10;
- min-height: 300px;
- width: 30%;
+ width: 18%;
   background-color: white;
-  box-shadow: -2px -2px 8px white;
+  box-shadow: -2px -2px 5px white;
   color: #007BFF;
 
 }
 
-.movie-links.visible {
+.movies-links{
+  display: none;
+  position: absolute;
+  padding: 1rem;
+  top: 10rem ;
+  right: 20%;
+  z-index: 10;
+ width: 28%;
+  background-color: white;
+  box-shadow: -2px -2px 5px white;
+  color: #007BFF;
+
+}
+
+
+.visible {
   display: block;
 }
 
