@@ -148,9 +148,6 @@ nav {
 }
 
 .content-box {
-  border: 1px solid white;
-  border-left: none;
-  border-right: none;
   padding: 2rem 4rem;
   flex: 1 1 45%;
 }
@@ -227,7 +224,10 @@ nav {
 
 }
 
-
+.content-vid-2{
+  height: 20rem; /* Adjust height as needed */
+  width: 20rem;  
+}
 
 .card-heading {
   color: white;
