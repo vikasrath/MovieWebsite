@@ -27,6 +27,9 @@ body {
 header {
   background-color: #0c0a09;
   color: #fafaf9;
+  position: sticky;
+  top: 0;
+  z-index: 20;
 }
 
 .header-container {
@@ -71,7 +74,6 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  padding: 1rem 0;
 }
 
 .nav-links li {
@@ -757,4 +759,17 @@ nav {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 2;
+}
+
+.top svg {
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  opacity: 0.5; /* Adjust the opacity as needed */
 }
